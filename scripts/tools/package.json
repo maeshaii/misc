@@ -1,0 +1,32 @@
+{
+  "name": "wny-tools",
+  "version": "1.0.0",
+  "description": "Shared tools and scripts for WNY Capstone Project",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "ngrok:update": "node ngrok/update-ngrok-url.js",
+    "ngrok:watch": "node ngrok/ngrok-watcher.js",
+    "ngrok:status": "node ngrok/update-ngrok-url.js --current",
+    "ngrok:backup": "node ngrok/update-ngrok-url.js --backup",
+    "ngrok:once": "node ngrok/ngrok-watcher.js --once",
+    "ngrok:debug": "node ngrok/ngrok-watcher.js --debug"
+  },
+  "keywords": [
+    "wny",
+    "capstone",
+    "tools",
+    "scripts",
+    "ngrok",
+    "automation"
+  ],
+  "author": "WNY Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.11.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
