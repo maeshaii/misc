@@ -7,20 +7,20 @@ const CONFIG = {
   NGROK_API_URL: 'http://127.0.0.1:4040/api/tunnels',
   FILES_TO_UPDATE: [
     {
-      path: path.join(__dirname, 'mobile-wny', 'app.json'),
+      path: path.join(__dirname, '..', '..', '..', '..', 'mobile', 'app.json'),
       type: 'json',
       key: 'expo.extra.API_BASE_URL'
     },
     {
-      path: path.join(__dirname, 'mobile-wny', 'services', 'api.ts'),
+      path: path.join(__dirname, '..', '..', '..', '..', 'mobile', 'services', 'api.ts'),
       type: 'typescript',
       pattern: /(export\s+const\s+API_BASE_URL\s*=\s*normalizeBaseUrl\()([^)]+)(\))/,
       replacement: (url) => `$1'${url}'$3`
     },
     {
-      path: path.join(__dirname, 'frontend-wny', 'src', 'services', 'api.ts'),
+      path: path.join(__dirname, '..', '..', '..', '..', 'frontend', 'src', 'services', 'api.ts'),
       type: 'typescript',
-      pattern: /(const\s+API_BASE_URL\s*=\s*['"`])([^'"`]+)(['"`])/,
+      pattern: /(const\s+API_BASE\s*=\s*process\.env\.REACT_APP_API_URL\s*\|\|\s*['"`])([^'"`]+)(['"`])/,
       replacement: (url) => `$1${url}$3`
     }
   ],

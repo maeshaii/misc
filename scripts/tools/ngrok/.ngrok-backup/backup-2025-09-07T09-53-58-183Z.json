@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-09-07T09:53:58.183Z",
+  "files": [
+    {
+      "path": "C:\\capstones\\misc\\scripts\\tools\\ngrok\\mobile-wny\\app.json",
+      "exists": false,
+      "content": null
+    },
+    {
+      "path": "C:\\capstones\\misc\\scripts\\tools\\ngrok\\mobile-wny\\services\\api.ts",
+      "exists": false,
+      "content": null
+    },
+    {
+      "path": "C:\\capstones\\misc\\scripts\\tools\\ngrok\\frontend-wny\\src\\services\\api.ts",
+      "exists": false,
+      "content": null
+    }
+  ]
+}
